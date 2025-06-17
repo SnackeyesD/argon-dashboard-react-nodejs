@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> <%=titre %> </title>
+</head>
+<body>
+  <p>Je suis <%= opt %> :</p>
+
+  <form method = 'get'>
+    <input type="text" name="nom" placeholder="présente toi">
+    <a href="/boucle/cordons">Confirmation</a>
+    <input type='submit' value = 'conclu' />
+  </form>
+
+  <p>Viens on va ajouter des prosuits dans le système</p>
+
+  <form method = 'post' action='/product'>
+    <input type= 'text' name='nom' placeholder='nom du produit' /> <br>
+    <input type='text' name = 'catégories' placeholder='nom du catégories' /><br>
+    <input name = 'description' type = 'textarea' placeholder='description du produit' /> <br>
+    <input type= 'number' name='quantiy' placeholder='Quantité du produit' /> <br>
+    <input type= 'submit' />
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+INSERT INTO vendeur (id_user, nom_boutique, description_boutique, code_facture)
+VALUES
+(1, 'Tech Innovations', 'Votre source pour les dernières technologies et gadgets.', 'TI-98765'),
+(2, 'Mode & Style', 'Vêtements élégants pour toutes les occasions.', 'MS-12345'),
+(3, 'Jardin Fleuri', 'Tout pour un jardin magnifique et luxuriant.', 'JF-67890'),
+(4, 'ÉlectroZen', 'Électronique de pointe et articles pour la maison intelligente.', 'EZ-54321'),
+(5, 'Artisanat du Monde', 'Pièces uniques et faites à la main de partout dans le monde.', 'AM-01010'),
+(6, 'Librairie du Coin', 'Livres, BDs et articles de papeterie pour tous les âges.', 'LC-20202'),
+(7, 'Sport Aventure', 'Équipements et accessoires pour tous vos défis sportifs.', 'SA-30303'),
+(8, 'Bébés Rêveurs', 'Tout pour le confort et le bonheur de vos tout-petits.', 'BR-40404'),
+(9, 'Délices Sucrés', 'Pâtisseries, chocolats et douceurs pour les gourmands.', 'DS-50505'),
+(10, 'Outillage Pro', 'Matériel et outils de qualité pour les professionnels et bricoleurs.', 'OP-60606'),
+(11, 'Meubles Modernes', 'Mobilier contemporain pour un intérieur stylé.', 'MM-70707'),
+(12, 'Beauté Naturelle', 'Produits de beauté et de bien-être à base d''ingrédients naturels.', 'BN-80808'),
+(13, 'Jeux Olympiques', 'Jeux de société, puzzles et divertissements pour toute la famille.', 'JO-90909'),
+(14, 'Accessoires Auto', 'Accessoires et pièces détachées pour votre voiture.', 'AA-11223'),
+(15, 'Bijoux Éclat', 'Créations scintillantes et bijoux intemporels.', 'BE-33445'),
+(16, 'Fournitures Bureau', 'Tout ce dont vous avez besoin pour un bureau productif.', 'FB-55667'),
+(17, 'Animalerie Heureuse', 'Produits et accessoires pour vos animaux de compagnie.', 'AH-77889'),
+(18, 'Cuisine du Monde', 'Ustensiles et épices pour explorer les saveurs d''ailleurs.', 'CM-99001'),
+(19, 'Bricolage Facile', 'Conseils et matériaux pour tous vos projets de bricolage.', 'BF-22110'),
+(20, 'Voyage Idéal', 'Accessoires et guides pour des voyages inoubliables.', 'VI-00112');

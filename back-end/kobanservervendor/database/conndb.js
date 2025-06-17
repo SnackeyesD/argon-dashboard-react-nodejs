@@ -1,0 +1,48 @@
+import mysql from 'mysql2/promise';
+import dotenv from 'dotenv';
+dotenv.config();
+console.log('check')
+
+const util = process.env.DB_USER
+console.log(typeof(util))
+console.log(process.env.DB_USER,)
+
+
+/* 
+NODE_ENV=DEV
+SSLKEY=b78de_ab899_457b6766b38e3a90a3a5c80685b6dd43.key
+SSLCERT=b78de_ab899_1576205276_51a83e5f3b2afb4a72888806732c61fe.crt
+PORT=3333
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=kbndata
+DB_PASSWORD=kbnmysqlserver
+DB_NAME=kbnuserdata
+JWT_SECRET=61fea6ff3e5bd5c5449c1f415ada015f31087c4335ae33be0e7d6f29d0b335a4
+JWT_EXPIRATION=1d
+*/
+
+const dbConfig = {
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+}
+
+// CHECKING de connexion de la base de données
+
+const pool = mysql.createPool(dbConfig);
+
+async function checkConnection() {
+    try {
+        const conn = await pool.getConnection();
+        console.log('La base de données est branchée mon pote !');
+        conn.release();
+    } catch (error) {
+        console.log('Revois ta base de données bro, ça marche pas !');
+        console.error(error);
+    }
+}
+
+export { pool, checkConnection };
